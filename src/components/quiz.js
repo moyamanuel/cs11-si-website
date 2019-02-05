@@ -3,22 +3,21 @@ import styles from '../components/quiz.module.css'
 
 class Quiz extends React.Component {
     retrieveWordBank() {
-        let answerBankItems = this.props.answerBank.map((word) => {
-            <li>{word}</li>
-        })
-        console.log(answerBankItems)
+        var answerBankItems = this.props.answerBank.map((word) =>
+        <div>
+            <input name="answer" type="radio" value={word}/>
+            <label>{word}</label>
+        </div>
+        )
         return answerBankItems
     }
     render() {
-        let answerBankItems = this.props.answerBank.map((word) => {
-            <li>{word}</li>
-        })
         return (
             <div className={styles.card}>
                 <h1>{this.props.question}</h1>
-                <ul>
-                    {answerBankItems}
-                </ul>
+                <form>
+                    {this.retrieveWordBank()}
+                </form>
             </div>
         )
     }
