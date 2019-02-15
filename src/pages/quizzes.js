@@ -1,19 +1,31 @@
 import React from 'react'
 import Quiz from '../components/quiz' 
-export default ({ data }) => (
-    <Quiz
-        question={data.contentfulFlashCard.question}
-        answerBank={data.contentfulFlashCard.wordBank}
-    />
-)
+export default ({ data }) => {
+    let questionList = data.allContentfulFlashCard.edges.map(currentQuestionObject => 
+        <Quiz
+            question={currentQuestionObject.node.question}
+            wordBank={currentQuestionObject.node.wordBank}
+            name={currentQuestionObject.node.question}
+        />
+    )
+    return(
+        <form>
+            {questionList}
+            <button>Submit</button>
+        </form>
+    )
+}
 
 export const query = graphql`
     query quizzesQuery {
-        contentfulFlashCard {
-          question
-          rightAnswer
-          wordBank
-        }
-      }
-      
+        allContentfulFlashCard {
+            edges {
+              node {
+                question
+                rightAnswer
+                wordBank
+              }
+            }
+          }
+      }      
 `

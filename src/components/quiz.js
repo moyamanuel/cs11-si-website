@@ -3,9 +3,9 @@ import styles from '../components/quiz.module.css'
 
 class Quiz extends React.Component {
     retrieveWordBank() {
-        var answerBankItems = this.props.answerBank.map((word) =>
+        let answerBankItems = this.props.wordBank.map((word) =>
         <div>
-            <input name="answer" type="radio" value={word}/>
+            <input name={this.props.name} type="radio" value={word}/>
             <label>{word}</label>
         </div>
         )
