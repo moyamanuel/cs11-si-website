@@ -1,5 +1,6 @@
 import React from 'react'
 import Quiz from '../components/quiz' 
+import { graphql } from 'gatsby'
 export default ({ data }) => {
     let questionList = data.allContentfulFlashCard.edges.map(currentQuestionObject => 
         <Quiz

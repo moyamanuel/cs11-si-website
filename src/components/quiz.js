@@ -11,6 +11,7 @@ class Quiz extends React.Component {
         )
         return answerBankItems
     }
+    
     render() {
         return (
             <div className={styles.card}>

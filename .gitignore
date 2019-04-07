@@ -65,3 +65,5 @@ public
 
 # contentful config file
 .contentful.json
+.vscode/ipch/4708c98567673c9/mmap_address.bin
+.vscode/ipch/4708c98567673c9/TEST.ipch
