@@ -1,4 +1,5 @@
 import React from 'react'
+import Layout from '../components/layout'
 import Quiz from '../components/quiz' 
 import { graphql } from 'gatsby'
 export default ({ data }) => {
@@ -10,10 +11,12 @@ export default ({ data }) => {
         />
     )
     return(
-        <form>
-            {questionList}
-            <button>Submit</button>
-        </form>
+        <Layout>
+            <form>
+                {questionList}
+                <button>Submit</button>
+            </form>
+        </Layout>
     )
 }
 
