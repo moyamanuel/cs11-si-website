@@ -3,6 +3,11 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Calendar from '../components/calendar'
+import BigCalendar from 'react-big-calendar'
+import moment from 'moment'
+import 'react-big-calendar/lib/css/react-big-calendar.css'
+
+const localizer = BigCalendar.momentLocalizer(moment)
 
 
 class RootIndex extends React.Component {
