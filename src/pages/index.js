@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Calendar from '../components/calendar'
 
+
 class RootIndex extends React.Component {
   constructor(props) {
     super(props)
@@ -31,7 +32,7 @@ class RootIndex extends React.Component {
         <Helmet title={siteTitle} />
         <h1>This is the start of something great</h1>
           <div style={{height:'500px'}}>
-            <Calendar eventList={this.state.calendarEvents}/>
+            <Calendar/>
           </div>
         </div>
       </Layout>
