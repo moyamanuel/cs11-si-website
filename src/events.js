@@ -66,7 +66,7 @@ export default [
     id: 9,
     title: 'Happy Hour',
     start: new Date(2019, 4, 12, 17, 0, 0, 0),
-    end: new Date(2019, 34 12, 17, 30, 0, 0),
+    end: new Date(2019, 34, 12, 17, 30, 0, 0),
     desc: 'Most important meal of the day',
   },
 ]
