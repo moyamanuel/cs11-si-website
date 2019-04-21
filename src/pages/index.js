@@ -50,8 +50,8 @@ class RootIndex extends React.Component {
       view='week'
       views={['week']}
       min={new Date(2008, 0, 4, 8, 0)} // 8.00 AM
-      max={new Date(2008, 0, 4, 17, 0)} // Max will be 6.00 PM!
-      date={new Date(2019, 0, 1)}
+      max={new Date(2020, 0, 4, 17, 0)} // Max will be 6.00 PM!
+      date={new Date(2019, 4, 1)}
     />
           </div>
         </div>
