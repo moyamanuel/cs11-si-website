@@ -48,7 +48,7 @@ class RootIndex extends React.Component {
             }
           ]}
           step={60}
-          view='week'
+          view='month'
           views={['week', 'month']}
           min={new Date(2008, 0, 4, 8, 0)} // 8.00 AM
           max={new Date(2020, 0, 4, 17, 0)} // Max will be 6.00 PM!
