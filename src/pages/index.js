@@ -42,16 +42,16 @@ class RootIndex extends React.Component {
         {
           'title': 'My event',
           'allDay': false,
-          'start': new Date(2018, 0, 1, 10, 0), // 10.00 AM
-          'end': new Date(2018, 0, 1, 14, 0), // 2.00 PM 
+          'start': new Date(2019, 4, 1, 10, 0), // 10.00 AM
+          'end': new Date(2019, 4, 1, 14, 0), // 2.00 PM 
         }
       ]}
       step={60}
       view='week'
       views={['week']}
-      min={new Date(2008, 0, 1, 8, 0)} // 8.00 AM
-      max={new Date(2008, 0, 1, 17, 0)} // Max will be 6.00 PM!
-      date={new Date(2018, 0, 1)}
+      min={new Date(2008, 0, 4, 8, 0)} // 8.00 AM
+      max={new Date(2008, 0, 4, 17, 0)} // Max will be 6.00 PM!
+      date={new Date(2019, 0, 1)}
     />
           </div>
         </div>
