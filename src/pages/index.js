@@ -5,7 +5,6 @@ import Layout from '../components/layout'
 import Calendar from '../components/calendar'
 import BigCalendar from 'react-big-calendar'
 import moment from 'moment'
-import 'react-big-calendar/lib/css/react-big-calendar.css'
 
 const localizer = BigCalendar.momentLocalizer(moment)
 
@@ -41,7 +40,7 @@ class RootIndex extends React.Component {
           localizer={localizer}
           events={[
             {
-              'title': 'My event',
+              'title': 'My event2',
               'allDay': false,
               'start': new Date(2019, 4, 1, 10, 0), // 10.00 AM
               'end': new Date(2019, 4, 1, 14, 0), // 2.00 PM 
